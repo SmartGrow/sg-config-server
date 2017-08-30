@@ -1,0 +1,11 @@
+server.port: 8888
+
+spring:
+  application:
+    name: sg-config-server
+    version: ${version}
+    description: Configuration server for SmartGrow project
+  cloud:
+    config.server.git:
+      uri: https://github.com/SmartGrow/sg-config
+      search-paths: configurations
